@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+@media only screen and (max-width: 600px) {
+  .divek {
+    width: 90vw !important;
+  }
+}
+
+body {
+  background-color: var(--darkCyan);
+}
+
+/*
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a 
+{ color: hsl(228, 45%, 44%); 
+ }
+*/
+
+.tekst {
+  color: var(--veryDarkDesaturatedBlue);
+  font-size: 1em;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.bold {
+  font-weight: bold;
+}
+.duzy {
+  font-size: 1.2em;
+}
+.szary {
+  color: var(--darkGrey);
+}
+.maly {
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+}
+
+.divek {
+  left: 50%;
+  border: 1px solid none;
+  border-radius: 8px;
+  width: 350px;
+  /* max-width: 90vw; */
+  height: fit-content;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* background: url(./images/bg-pattern-card.svg); */
+  /* background-repeat-y: no-repeat; */
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tlo {
+  background-repeat: repeat-x;
+  background: url(./images/bg-pattern-card.svg);
+  height: 100px;
+}
+
+.test {
+  display: flex;
+}
+
+.fota {
+  border-radius: 50%;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  margin: auto;
+  transform: translateY(-50px);
+}
+
+.dane {
+  text-align: center;
+
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5em;
+  margin-top: -30px;
+}
+
+.staty {
+  /* font-family: "Kumbh Sans", sans-serif; */
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  border-top: 1px solid var(--darkGrey);
+}
+.item {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.lewe {
+  top: 0;
+  left: 0;
+  padding-left: 300px;
+  transform: translate(-40%, -40%);
+  position: fixed;
+}
+
+.prawe {
+  right: 0;
+  bottom: 0;
+  margin-right: 25%;
+  transform: translate(50%, 50%);
+  position: Fixed;
+}
+
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+  --darkGrey: hsl(0, 0%, 59%);
+}
